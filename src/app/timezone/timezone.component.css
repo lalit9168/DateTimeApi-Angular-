@@ -1,0 +1,83 @@
+/* Overall page layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card UI */
+.card {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Time display */
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: #f1f9ff;
+  border: 1px solid #cce0f4;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.time-box h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.time-box p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-container label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dropdown-container select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.dropdown-container select:hover {
+  border-color: #0077cc;
+}

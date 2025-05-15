@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+    <h1 class="title">🌐 Timezone Converter</h1>
+
+    <div class="time-display">
+      <div class="time-box">
+        <h2>🕒 Local Time</h2>
+        <p>{{ localTime }}</p>
+      </div>
+
+      <div class="time-box">
+        <h2>🌍 Time in {{ selectedZone }}</h2>
+        <p>{{ zoneTime }}</p>
+      </div>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="timezone-select">Select Time Zone:</label>
+      <select id="timezone-select" [(ngModel)]="selectedZone" (change)="onZoneChange()">
+        <option *ngFor="let zone of timeZones" [value]="zone">
+          {{ zone }}
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
